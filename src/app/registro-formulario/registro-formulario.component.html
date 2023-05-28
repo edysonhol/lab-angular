@@ -1,0 +1,26 @@
+<div class="modalBackdrop">
+
+  <section class="modalRegister">
+
+    <form class="formulario">
+      <h2 class="modalRegister__title">Registro de usuarios</h2>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" formControlName="nombre" #nombre class="modalRegister__inputs" placeholder="Ingrese sus nombres" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" formControlName="apellido" #apellido class="modalRegister__inputs" placeholder="Ingrese sus apellidos" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" formControlName="edad" #edad class="modalRegister__inputs" placeholder="Ingrese su edad" max="99" min="0" required>
+
+      <label for="cedula">Cédula:</label>
+      <input type="text" formControlName="cedula" #cedula class="modalRegister__inputs" placeholder="Ingrese su cédula"  required>
+
+      <button type="submit"  (click)="userRegister(nombre.value, apellido.value, edad.value, cedula.value)" (click)="closeModal()" > Registrar Usuario </button>
+      <button (click)="closeModal()">Cancelar</button>
+    </form>
+
+  </section>
+
+</div>

@@ -1,0 +1,47 @@
+.nav {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav_title {
+  font-size: 30px;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.navigationBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigationBar__item {
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #666666;
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #2b2b2b;
+}
+
+.app-registro-formulario {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}

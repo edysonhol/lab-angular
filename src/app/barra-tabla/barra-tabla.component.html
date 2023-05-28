@@ -1,0 +1,13 @@
+<nav class="nav">
+
+  <h2 class="nav_title"> Listado de Usuarios</h2>
+
+  <ul class="navigationBar">
+    <li class="navigationBar__item">   <Button class="button" (click)="openModal()"> Registrar Usuario  </Button> </li>
+  </ul >
+
+</nav>
+
+<div class=""  *ngIf="modalSwitch == true">
+  <app-registro-formulario> </app-registro-formulario>
+</div>

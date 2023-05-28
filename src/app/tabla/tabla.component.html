@@ -1,0 +1,23 @@
+<section class="containerTable">
+  <table class="table">
+    <caption>Información de Usuarios</caption>
+    <thead class="table__header">
+      <tr class="table__header__row">
+        <th class="table__header__row_text" scope="col">Nombre</th>
+        <th class="table__header__row_text" scope="col">Apellido</th>
+        <th class="table__header__row_text" scope="col">Edad</th>
+        <th class="table__header__row_text" scope="col">Cédula</th>
+      </tr>
+    </thead>
+    <tbody class="table__body">
+      <tr class="table__body__row" *ngFor="let usuario of usuario; let i = index">
+        <td class="table__header__row_textInfo">{{usuario.nombre}}</td>
+        <td class="table__header__row_textInfo">{{usuario.apellido}}</td>
+        <td class="table__header__row_textInfo">{{usuario.edad}}</td>
+        <td class="table__header__row_textInfo">{{usuario.cedula}}</td>
+        <th class="table__data__cell"><button (click)="eliminarUsuario(i)">Eliminar usuario</button></th>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
